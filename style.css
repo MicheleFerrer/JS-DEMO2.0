@@ -1,0 +1,67 @@
+
+
+
+
+.Title{
+margin-left: 20%;
+font-weight: 400;
+font-size: large;
+padding: 10px;
+}
+
+.body{
+    padding-left: 5px;
+    margin: 20px;
+    font-size: medium;
+    margin-block: 10px;
+}
+
+
+.button-container {
+    background-color: #ffffff;
+    padding: 0px;
+    border-radius: 40px;
+    max-width: fit-content;
+    margin-bottom: 0px;
+    margin-left:5px;
+}
+
+.button-container button {
+    background-color: #c6dfd2;
+    text-emphasis-color: none;
+    padding: 10px 10px 10px 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 2px;
+    outline: none;
+    box-shadow: 0 0 2px rgb(74, 74, 74);
+}
+.button-container button a {
+    color: inherit; /* Inherit text color from parent */
+    text-decoration: none; /* Remove underline */
+}
+
+
+.button-container button:focus {
+    outline: 0; /* Remove the default focus outline */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add a custom box shadow */
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.06);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.button-container:hover {
+    animation: pulse 2s infinite;
+    background-color: #aac1b4;
+}
