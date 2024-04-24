@@ -72,3 +72,45 @@ function square(number){
 
 // let number = square(2); dont have to declare like this
 console.log(square(2)); // there are two function calls here.expressions are a call to a function
+
+// Will be practicing Object Oriented Programming.
+
+/* const circle = {
+    radius:1,
+    location: {
+        x:1,
+        y:1
+    },
+    draw: function() {
+        console.log("draw");
+    }
+};
+circle.draw();*/
+// three objects in the const circle: radius, location and draw.
+// if a member is a function then its referred to as a method ie: draw is a method
+// radius and location are properties.
+
+// Factory Function
+function createCircle(radius){
+    return {
+        radius, // when the key and value are the same we can remove the code and just leave the key
+        draw: function() {
+        console.log('draw');
+        }
+        }
+    };
+
+    const circle = createCircle(1);
+circle.draw();
+
+// constructor function:
+function Circle(radius) { // circle function is actually an object
+// we could put console.log('this',this); but we dont want to mess with global variables since they are everywhere.
+    this.radius = radius;
+    this.draw = function(){
+        console.log('draw');
+    }
+}
+
+const another = new Circle(1); // the statement 'new' is an empty operator that points to 'this.' to declare the object
+//when we use the 'new' operator the return function happens automatically.
