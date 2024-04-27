@@ -75,7 +75,7 @@ console.log(square(2)); // there are two function calls here.expressions are a c
 
 // Will be practicing Object Oriented Programming.
 
-/* const circle = {
+ const circle = {
     radius:1,
     location: {
         x:1,
@@ -112,5 +112,10 @@ function Circle(radius) { // circle function is actually an object
     }
 }
 
+Circle.call({},1);
+Circle.apply({},[1,2,3]);
+
 const another = new Circle(1); // the statement 'new' is an empty operator that points to 'this.' to declare the object
 //when we use the 'new' operator the return function happens automatically.
+
+
